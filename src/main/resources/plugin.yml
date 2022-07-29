@@ -1,0 +1,4 @@
+name: Game
+version: '${project.version}'
+main: fr.antiquemc.game.Game
+authors: [ CHIFOUU ]
