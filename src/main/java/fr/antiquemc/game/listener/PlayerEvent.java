@@ -75,6 +75,8 @@ public class PlayerEvent implements Listener {
         Player target = event.getEntity();
         PlayerIngGameListener.eleminate(target);
 
+        event.getDrops().clear();
+
         if(GManager.alivePlayers.size() <= 1) {
             Bukkit.getScheduler().runTaskLater(Game.getInstance(), () -> {
                 event.getDrops().clear();
